@@ -18,7 +18,7 @@ const[invoices, setInvoices]=React.useState([]);
       
       console.log(key);
       console.log('fetch data',key);
-      let response =await fetch(`http://invoicery.herokuapp.com/searchitem/${key}`);
+      let response =await fetch(`https://invoicery.herokuapp.com/searchitem/${key}`);
       let result = await response.json();
       
    setInvoices(result);

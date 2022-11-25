@@ -11,7 +11,7 @@ export default function Login() {
   const navigate = useNavigate();
 
   const handleLogin = async () => {
-    let result = await fetch("http://invoicery.herokuapp.com/login", {
+    let result = await fetch("https://invoicery.herokuapp.com/login", {
       method: 'post',
       body: JSON.stringify({ username, password }),
       headers: {

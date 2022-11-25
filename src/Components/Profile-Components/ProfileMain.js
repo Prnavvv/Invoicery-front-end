@@ -13,7 +13,7 @@ export default function ProfileMain() {
     let key = session_data.slice(1,session_data.length-1)
 
     const fetchInvoice =async () => {
-        let result = await fetch(`http://invoicery.herokuapp.com/search/${key}`);
+        let result = await fetch(`https://invoicery.herokuapp.com/search/${key}`);
 
         result = await result.json();
 

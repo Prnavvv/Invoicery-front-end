@@ -30,7 +30,7 @@ export default function Main() {
         let itemPrice = item.itemPrice;
         let invoiceNumber = formData.invoiceNumber;
 
-        let res = await fetch('http://invoicery.herokuapp.com/item', {
+        let res = await fetch('https://invoicery.herokuapp.com/item', {
             method: 'post',
             body: JSON.stringify({ invoiceNumber, itemName, itemPrice, itemQuantity }),
             headers: {
@@ -86,7 +86,7 @@ export default function Main() {
 
         let yourName = formData.yourName;let companyName= formData.companyName;let address= formData.yourAddress;let city= formData.yourCity;let email= formData.yourEmail;let phoneNo= formData.yourPhone;let accountNo= formData.accountNumber;let bankName= formData.bankName;let bankBranch= formData.bankBranch;let clientName= formData.clientName;let clientEmail= formData.clientEmail;let clientPhone= formData.clientPhone;let clientCompany= formData.clientCompany;let clientAddress= formData.clientAddress;let clientCity= formData.clientCity;let invoiceNumber= formData.invoiceNumber;let invoiceDate= formData.invoiceDate;let dueDate= formData.dueDate;let tax = formData.tax;
 
-        let result =await fetch('http://invoicery.herokuapp.com/invoice',{
+        let result =await fetch('https://invoicery.herokuapp.com/invoice',{
             method:'post',
             body: JSON.stringify({userName,yourName, companyName, address, city, email, phoneNo, accountNo, bankName, bankBranch, clientName, clientEmail, clientPhone, clientCompany, clientAddress, clientCity, invoiceNumber, invoiceDate, dueDate,tax}),
             headers:{
