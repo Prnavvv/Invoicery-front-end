@@ -11,7 +11,7 @@ export default function Login() {
   const navigate = useNavigate();
 
   const handleLogin = async () => {
-    let result = await fetch("https://invoicery.herokuapp.com/login", {
+    let result = await fetch("https://invoicery-back-end-production.up.railway.app/login", {
       method: 'post',
       body: JSON.stringify({ username, password }),
       headers: {

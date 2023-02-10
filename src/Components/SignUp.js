@@ -94,7 +94,7 @@ export default function FormValidation() {
     let email = data.email;
 
 
-    let result = await fetch('https://invoicery.herokuapp.com/register', {
+    let result = await fetch('https://invoicery-back-end-production.up.railway.app/register', {
       method: 'post',
       body: JSON.stringify({ email, username, password }),
       headers: {

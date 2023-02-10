@@ -30,7 +30,7 @@ export default function Main() {
         let itemPrice = item.itemPrice;
         let invoiceNumber = formData.invoiceNumber;
 
-        let res = await fetch('https://invoicery.herokuapp.com/item', {
+        let res = await fetch('https://invoicery-back-end-production.up.railway.app/item', {
             method: 'post',
             body: JSON.stringify({ invoiceNumber, itemName, itemPrice, itemQuantity }),
             headers: {
@@ -104,6 +104,7 @@ export default function Main() {
         <>
             <div className="main">
                 <h1 className='form-heading'>Editor</h1>
+
 
                 {/* FORM START*/}
 
